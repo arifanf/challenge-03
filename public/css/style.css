@@ -1,0 +1,524 @@
+:root {
+    --primary-blue-1: #0D28A6;
+    --primary-blue-2: #CFD4ED;
+    --main-content: #F4F5F7;
+    --neutral-1: #D0D0D0;
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* =============================================================================================================================================== 
+                                                    LOGIN PAGE 
+================================================================================================================================================== */
+
+.login-container {
+    background-color: var(--primary-blue-1);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.login-container .img-car {
+    height: 680px;
+    opacity: 0.7;
+    transform: translateY(-5%);
+}
+
+.login-container h1 {
+    margin: 32px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.login-container .login-form {
+    width: 480px;
+    height: 100vh;
+    background-color: var(--main-content);
+    padding: 45px;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+}
+
+.form-side .form-group {
+    columns: #222;
+}
+
+.form-side .form-control {
+    font-size: 14px;
+    color: #A5A5A5;
+    border: 1px solid #A5A5A5;
+
+}
+
+.form-side .form-control:focus {
+    box-shadow: none;
+    color: #222;
+}
+
+.form-side .btn-enter {
+    width: 100%;
+    background-color: var(--primary-blue-1);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+/* =============================================================================================================================================== 
+                                            DASHBOARD PAGE 
+================================================================================================================================================== */
+
+#main-container {
+    min-height: 100vh;
+}
+
+/*************************************
+             SIDE MENU
+**************************************/
+
+#side-menu {
+    background: var(--primary-blue-1);
+    flex-basis: 70px; 
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: block;
+    margin: 18px auto;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary-blue-2);
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    line-height: 18px;
+    height: 64px;
+    position: relative;
+    font-size: 12px;
+    font-weight: 300;   
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.main-nav__item .dashboard {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+}
+
+.main-nav__item a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+}
+
+/************************************* 
+            MAIN CONTENT
+*************************************/
+
+#main {
+    flex-grow: 1; 
+    flex-shrink: 0;
+    background-color: var(--main-content);
+    /* x */
+}
+
+/*----------- HEADER -----------*/
+
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    transition: all 0.5s;
+    padding: 18px 0;
+    height: 70px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    background-color: #FFF;
+    padding-left: 70px;
+}
+
+/* Long Logo */
+.logo-panjang {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 34px;
+    background-color: var(--primary-blue-2);
+    margin-right: 30px;
+}
+
+/* Burger Menu */
+.menu-btn {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-btn:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.bx-menu {
+    font-size: 32px;
+    padding-left: 25px;
+}
+/* Search Bar */
+.search-form {
+    width: 100%;
+    border: 1px solid rgba(208, 208, 208, 1);
+    border-radius: 2px 0 0 2px;
+    position: relative;
+    padding: 10px;
+}
+
+.search-input { 
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--primary-blue-1);
+    transition: 0.3s;
+    width: 100%;
+    border: 0;
+    outline: 0;
+}
+
+.bx-search {
+    font-size: 24px;
+    color: #D0D0D0;
+    position: absolute;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.search-btn {
+    background-color: #FFF;
+    color: var(--primary-blue-1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: .65em;
+    border: 1px solid var(--primary-blue-1);
+    border-radius: 0 2px 2px 0;
+    position: relative;
+}
+
+/* User Header */
+.profile-pic {
+    width: 38px;
+    height: 38px;
+    background-color: var(--primary-blue-2); 
+}
+
+.initial-uname {
+    font-size: 16px;
+    font-weight: 700;  
+}
+
+.uname {
+    padding: 0 8px;
+}
+
+#dropdown-Menu {
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown-Menu:focus {
+    box-shadow: none;
+}
+
+/*----------- End of HEADER -----------*/
+
+
+/*----------- CONTENT -----------*/
+#content {
+    padding: 0;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+/* content left side */
+.right-menu .col-auto {
+    padding-left: 0;
+}
+
+.side-menu {
+    padding-top: 24px;
+    height: 100vh;
+    width: 220px;
+    background-color: #FFF;
+    position: fixed;
+}
+
+.side-menu__title {
+    display: block;
+    padding: 10px 0;
+    
+}
+
+.side-menu__title h5 {
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #8A8A8A;
+    line-height: 18px;
+}
+
+.side-menu__link {
+    display: block;
+    padding: 10px 0;
+    line-height: 18px;
+    margin-top: 8px;
+    height: 42px;
+    background-color: var(--primary-blue-2);
+}
+
+.side-menu__link a {
+    padding-left: 25px;
+    text-decoration: none;
+    color: #151515;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.side-menu__link {
+    padding-left: 0;
+}
+
+/* Content Right Side */
+#right-content {
+    padding-right: 25px;
+    margin-left: 220px;
+}
+
+/* Page Title */
+.content-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content-title h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #000;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    font-size: 14px;
+    padding:0;
+}
+
+.breadcrumb-item a {
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.bx-chevron-right {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* List Menu */
+.content-table {
+    padding: 12px 0;
+}
+
+.list-title h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #000;
+    padding: 6px 0;
+}
+
+.list-title h2:before {
+    content: "";
+    display: block;
+    width: 4px;    
+    background: blue;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+}
+
+.list-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* List Table Order */
+.content-table {
+    font-size: 14px;
+    text-align: left;
+}
+
+.content-table .table {
+    margin-top: 16px;
+    border-radius: 5px 5px 0 0;
+}
+
+.content-table .table th {
+    border-bottom: 2px solid var(--main-content);
+    font-weight: 700;
+    
+}
+
+.content-table .table td {
+    border-top: 2px solid var(--main-content);
+}
+
+.content-table .table thead {
+    background: var(--primary-blue-2);
+    border-radius: 5px 5px 0 0;
+}
+
+.content-table .table tbody {
+    background: #FFF;
+}
+
+/* Pagination Table */
+#list-footer {
+    padding: 0;
+}
+
+#list-footer .col, #list-footer .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.limit__dropdown .dropdown-menu {
+    min-width: 5rem;
+}
+
+.limit__dropdown .btn-limit {
+    border: 1px solid var(--neutral-1);
+    color: var(--neutral-1);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.jump-page__dropdown .btn-jumpPage {
+    border: 1px solid var(--neutral-1);
+    width: 83px;
+    color: var(--neutral-1);
+    border-radius: 2px 0 0 2px;
+    padding-right: 0;
+    box-shadow: none;
+}
+
+.jump-page__dropdown .dropdown-menu {
+    min-width: 5rem;
+}
+
+.jump-page__dropdown .bx-chevron-down {
+    font-size: 24px;
+    padding-top: 1px;
+}
+
+.jump-page__dropdown .btn-go {
+    background-color: var(--primary-blue-1);
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 0 2px 2px 0;
+}
+
+.pagination {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.pagination .page-item {
+    width: 38px;
+    height: 40px;
+    text-align: center;
+}
+
+.pagination .page-link {
+    border: 1px solid #8A8A8A;
+    color: #8A8A8A;
+}
+
+.pagination .page-link:hover, .pagination .page-link:focus {
+    border: 1px solid var(--primary-blue-1);
+    color: var(--primary-blue-1);
+    background-color: var(--primary-blue-2);
+}
+
+/* Table List Car */
+.list-car {
+    margin-top: 40px;
+    margin-bottom: 26px;
+}
+
+/*----------- End of CONTENT -----------*/
+
+
+
+/* =============================================================================================================================================== 
+                                                    CARS PAGE 
+================================================================================================================================================== */
+
+/* Right Content Sorter */
+.car-sorter .btn-sorter .btn {
+    margin-right: 16px;
+    margin-top: 14px;
+}
+
+/* Cars card */
+.cars-card .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 24px;
+}
+
+.cars-card .card-group {
+    padding: 0 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    width: 17rem;
+}
+
+.card .card-text {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.card .harga-pinjam {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.card-text .bx-key {
+    transform: rotate(-50deg);
+}
