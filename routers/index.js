@@ -1,4 +1,5 @@
 module.exports = {
     dashboard: require('./dashboard'),
-    cars: require('./cars')
+    cars: require('./cars'),
+    auth: require('./auth')
 }
