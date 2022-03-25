@@ -1,0 +1,137 @@
+<div class="content-table d-flex flex-column ">
+    <div class="col">
+        <div class="list-title">
+            <h2><a href="#">List Order</a></h2>
+        </div>
+    </div> <!-- End of List Title -->
+
+    <div class="col">
+        <div class="row">
+
+            <!-- table here -->
+            <table class="table datatable">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+
+                        <!-- User Email -->
+                        <%- include('../items/table-head', { title: 'User Email' }) %>
+
+                        <!-- Car -->
+                        <%- include('../items/table-head', { title: 'Car' }) %>
+
+                        <!-- Start Rent -->
+                        <%- include('../items/table-head', { title: 'Start Rent' }) %>
+
+                        <!-- Finish Rent -->
+                        <%- include('../items/table-head', { title: 'Finish Rent' }) %>
+
+                        <!-- Price -->
+                        <%- include('../items/table-head', { title: 'Price' }) %>
+
+                        <!-- Status -->
+                        <%- include('../items/table-head', { title: 'Status' }) %>
+
+                    </tr>
+                </thead>
+                <tbody>
+            
+                    <!-- table body here -->
+                    <tr>
+                        <% order.forEach( item => { %>
+                            <%- include('../items/card-item', { item } ) %>
+                        <% }) %>
+                    </tr>
+            
+                </tbody>
+            </table>
+            
+        </div>
+    </div> <!-- End of List Table -->
+
+    <div id="list-footer">
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <div class="col">
+                            <div class="table-pagination">
+                                <div class="limit__title">Limit</div>
+                                <div class="limit__dropdown">
+
+                                    <button class="btn btn-limit" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                        <span>10</span><i class='bx bx-chevron-down'></i>
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">10</a>
+                                        <a class="dropdown-item" href="#">15</a>
+                                        <a class="dropdown-item" href="#">20</a>
+                                    </div>
+
+                                </div>
+                        </div>
+                    </div>
+                    </div>  
+                </div>
+
+                <div class="col">
+                    <div class="d-flex">
+                        <div class="col-auto">
+
+                            <div class="jump-page__title">Jump to page</div>
+                            <div class="jump-page__dropdown">
+                                <button class="btn btn-jumpPage" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="text d-flex justify-content-between">1<i class='bx bx-chevron-down'></i></span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">1</a>
+                                    <a class="dropdown-item" href="#">2</a>
+                                    <a class="dropdown-item" href="#">3</a>
+                                    <a class="dropdown-item" href="#">4</a>
+                                    <a class="dropdown-item" href="#">5</a>
+                                    <a class="dropdown-item" href="#">6</a>
+                                    <a class="dropdown-item" href="#">7</a>
+                                    <a class="dropdown-item" href="#">8</a>
+                                    <a class="dropdown-item" href="#">9</a>
+                                </div>
+                                <button class="btn btn-go">Go</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <div class="d-flex ">
+                        
+                        <div class="col">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class='bx bxs-chevrons-left'></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class='bx bxs-chevrons-right'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Pagination -->
+
+        </div>
+    </div> <!-- End of List Footer --> 
+
+</div> <!-- End of Table Order -->

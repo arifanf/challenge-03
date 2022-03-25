@@ -11,7 +11,7 @@ const passport = require('passport')
 const flash = require('express-flash')
 const session = require('express-session')
 
-app.use(express.urlencoded({ extended: false})) // untuk mengirim data dari form melalui parameter req
+app.use(express.urlencoded({ extended: false })) // untuk mengirim data dari form melalui parameter req
 app.use(express.json())
 
 // Middleware untuk autentikasi & session

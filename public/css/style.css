@@ -66,7 +66,15 @@ body {
     font-weight: 700;
 }
 
+.form-side .register {
+    font-size: 14px;
+    color: #A5A5A5;    
+}
 
+.form-side .register a {
+    color: var(--primary-blue-1);
+    text-decoration: none;
+}
 
 /* =============================================================================================================================================== 
                                             DASHBOARD PAGE 
@@ -260,12 +268,13 @@ input:focus::placeholder {
     padding-left: 0;
 }
 
-.side-menu {
+.left-side {
     padding-top: 24px;
     height: 100vh;
     width: 220px;
     background-color: #FFF;
     position: fixed;
+    z-index: 1;
 }
 
 .side-menu__title {
@@ -501,8 +510,8 @@ input:focus::placeholder {
 
 /* Right Content Sorter */
 .car-sorter .btn-sorter .btn-sort {
-    border: 1px solid var(--neutral-1);
-    color: var(--neutral-1);
+    border: 1px solid #AEB7E1;
+    color: #AEB7E1;
     border-radius: 2px;
     box-shadow: none;
     margin-right: 14px;

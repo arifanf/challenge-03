@@ -1,17 +1,33 @@
-<h1>Login</h1>
-<% if (messages.error) { %>
-  <p style="color: red; font-style: italic"><%= messages.error %></p>
-<% } %>
-<form action="/auth/login" method="POST">
-  <div>
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username" required />
-  </div>
-  <div>
-    <label for="password">Password</label>
-    <input type="text" id="password" name="password" required />
-  </div>
-  <button type="submit">Login</button>
-</form>
+<div class="login-container d-flex">
 
-<a href="/auth/register">Register</a>
+  <div class="img-side">
+      <div class="login-img">
+          <img src="/img/login.png" alt="" class="img-car">
+      </div>
+  </div> <!-- End of image cover -->
+
+  <div class="form-side">
+      <div class="col login-form">
+          <div class="logo-panjang"></div>
+          <h1>Welcome, Admin BCR</h1>
+          <% if (messages.error) { %>
+            <p style="color: red; font-style: italic; font: size 14px;" class="mb-2"><%= messages.error %></p>
+        <% } %>
+          <form action="/auth/login" method="POST">
+            
+              <div class="form-group">
+                  <label for="username">Email</label>
+                  <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Contoh: johndee@gmail.com" name="username" required>
+              </div>
+              <div class="form-group">
+                  <label for="password1">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="6+ karakter" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-enter text-center">Sign In</button>
+              </form>
+              <p class="register mt-1">Belum punya akun? <a href="/auth/register">Register</a></p>
+      </div>
+  </div> <!-- End of form login -->
+
+</div> <!-- End of Login Content -->
+  
