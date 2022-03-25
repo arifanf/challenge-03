@@ -3,16 +3,15 @@
 
     <div class="main-nav text-center">
         <div class="main-nav__logo">
-            <a href="index.html">
+            <a href="#">
                 <div class="logo"></div>
             </a>
         </div>
-        <div class="main-nav__item" >
-            <a href="#"><i class='bx bx-home-alt icon'></i><br>Dashboard</a>
-        </div>
-        <div class="main-nav__item">
-            <a href="#" class="cars"><i class='bx bxs-truck icon'></i><br>Cars</a>
-        </div>
+
+        <!-- sidebar item here -->
+        <%- include('../items/sidebar-item', { link: '/dashboard/', iconClass: 'bx-home-alt', label: 'Dashboard' }) %>
+        <%- include('../items/sidebar-item', { link: '/cars/', iconClass: ' bxs-truck', label: 'Cars' }) %>
+
     </div>
 </div>
 <!-- END OF SIDE MENU -->

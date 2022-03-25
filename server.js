@@ -8,6 +8,7 @@ const routers = require('./routers')
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(expressLayouts)
+
 app.use( (req, res, next) => {
     req.app.set('layout','layouts/default')
     next()

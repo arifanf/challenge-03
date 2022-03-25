@@ -9,4 +9,5 @@ router.use( (req,res,next) => {
 
 router.get('/', userController.index )
 
+
 module.exports = router

@@ -1,49 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRC Dashboard Login</title>
+<div class="login-container d-flex">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <div class="img-side">
+        <div class="login-img">
+            <img src="/img/login.png" alt="" class="img-car">
+        </div>
+    </div> <!-- End of image cover -->
+
+    <div class="form-side">
+        <div class="col login-form">
+            <div class="logo-panjang"></div>
+            <h1>Welcome, Admin BCR</h1>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Contoh: johndee@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="input-password" placeholder="6+ karakter">
+                </div>
+                <button type="submit" class="btn btn-enter text-center">Sign In</button>
+                </form>
+        </div>
+    </div> <!-- End of form login -->
+
+</div> <!-- End of Login Content -->
     
-    <!-- Icon CSS -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-
-    <div class="login-container d-flex">
-
-        <div class="img-side">
-            <div class="login-img">
-                <img src="/img/login.png" alt="" class="img-car">
-            </div>
-        </div> <!-- End of image cover -->
-
-        <div class="form-side">
-            <div class="col login-form">
-                <div class="logo-panjang"></div>
-                <h1>Welcome, Admin BCR</h1>
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email</label>
-                      <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Contoh: johndee@gmail.com">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="input-password" placeholder="6+ karakter">
-                    </div>
-                    <button type="submit" class="btn btn-enter text-center">Sign In</button>
-                  </form>
-            </div>
-        </div> <!-- End of form login -->
-
-    </div> <!-- End of Login Content -->
-    
-</body>
-</html>
