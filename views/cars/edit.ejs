@@ -1,1 +1,144 @@
-<h1>Ini halaman edit cars</h1>
+<body>
+
+    <div id="main-container" class="d-flex">
+
+        <!-- sidebar here -->
+        <%- include('../partials/layouts/sidebar') %>
+        
+        <!-- MAIN -->
+        <div id="main">
+            
+            <!-- navbar here -->
+            <%- include('../partials/layouts/navbar') %>
+
+            <!-- ======= CONTENT  ======= -->
+            <div id="content">
+
+                <div class="col">
+                    <div class="row">
+                        
+                        <!-- left content here -->
+                        <%- include('../partials/cars/sidemenu') %>
+
+
+                        <div class="col">
+                            <div id="right-content">
+                                <div class="content-title">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Cars</a></li>
+                                        <i class='bx bx-chevron-right'></i> 
+                                        <li class="breadcrumb-item"><a href="http://localhost:1700/cars">List Car</a></li>
+                                        <i class='bx bx-chevron-right'></i> 
+                                        <li class="breadcrumb-item active">Edit New Car</li>
+                                        </ol>
+                                    </nav>
+                                    <h1>Edit New Car</h1>
+                                    
+                                </div> <!-- End of Page Title -->
+                                
+                                <div class="add-form">
+
+                                    <div class="row">
+                                        <div class="col">
+                                
+                                            <div class="card">
+                                                <div class="card-body">
+                                
+                                                    <form>
+                                                        <div class="row mb-3">
+                                                            <label for="inputText" class="col-sm-2 col-form-label">Nama<span style="color: red;">*</span></label>
+                                                            <div class="col-4">
+                                                                <input type="text" class="form-control" placeholder="Nama">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mb-3">
+                                                            <label for="inputNumber" class="col-2 col-form-label">Harga<span style="color: red;">*</span></label>
+                                                            <div class="col-4">
+                                                                <input type="number" class="form-control" placeholder="Harga">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mb-3">
+                                                            <label for="inputFile" class="col-2 col-form-label">Foto<span style="color: red;">*</span></label>
+                                                            <div class="col-4 mb-0">
+                                                                <label class="form-control" for="file-input">Choose file
+                                                                    <i class='bx bx-upload float-right pt-1'></i>
+                                                                </label>
+                                                                <small id="emailHelp" class="form-text text-muted">File size max. 2MB</small>
+                                                                <input type="file" class="custom-file-input" id="file-input" />
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                        <div class="row mb-3">
+                                                            <label for="inputDate" class="col-2 col-form-label">Start Rent</label>
+                                                            <div class="col-4">
+                                                                <input type="date" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mb-3">
+                                                            <label for="inputDate" class="col-2 col-form-label">Finish Rent</label>
+                                                            <div class="col-4">
+                                                                <input type="date" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mb-3">
+                                                            <label for="inputDate" class="col-2 col-form-label">Created at</label>
+                                                            <div class="col-4">
+                                                                <span class="placeholder">-</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mb-3">
+                                                            <label for="inputDate" class="col-2 col-form-label">Created at</label>
+                                                            <div class="col-4">
+                                                                <span class="placeholder">-</span>
+                                                            </div>
+                                                        </div>
+                                        
+                                                    </form> <!-- End of Add Form -->
+                                
+                                                </div>
+                                          </div>
+                                
+                                        </div> <!-- End of Form -->
+
+                                    </div> <!-- End of Card Form -->
+
+                                    <div class="btn-group col-2">
+                                        
+                                        <div class="col pl-0">
+                                            <button type="submit" class="btn btn-cancel">Cancel</button>
+                                        </div>
+                                        <div class="col pl-0">
+                                            <button type="submit" class="btn btn-save">Save</button>
+                                        </div>
+
+                                    </div> <!-- End of Button Group -->
+
+                                </div> <!-- End of Add Form -->
+
+                            </div>
+                        </div> <!-- End of Right Content -->
+
+                    </div>
+                </div>
+
+            </div> <!-- End of Main Content -->
+
+            <!-- ======= END OF CONTENT ======= -->
+
+        </div>
+        <!-- END OF MAIN -->
+
+    </div>
+
+    
+    <!-- footer html di sini -->
+    <%- include('../partials/html/footer') %>
+
+</body>

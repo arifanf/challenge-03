@@ -486,10 +486,36 @@ input:focus::placeholder {
                                                     CARS PAGE 
 ================================================================================================================================================== */
 
+.content-title .btn-add {
+    background-color: var(--primary-blue-1);
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 0 2px 2px 0;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.bx-plus {
+    font-weight: 700;
+}
+
 /* Right Content Sorter */
-.car-sorter .btn-sorter .btn {
-    margin-right: 16px;
+.car-sorter .btn-sorter .btn-sort {
+    border: 1px solid var(--neutral-1);
+    color: var(--neutral-1);
+    border-radius: 2px;
+    box-shadow: none;
+    margin-right: 14px;
     margin-top: 14px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.car-sorter .btn-sorter .btn-sort:hover, .car-sorter .btn-sorter .btn-sort:focus {
+    border: 1px solid var(--primary-blue-1);
+    color: var(--primary-blue-1);
+    background-color: var(--primary-blue-2);
 }
 
 /* Cars card */
@@ -505,7 +531,7 @@ input:focus::placeholder {
     box-shadow: rgba(0, 0, 0, 0.15);
 }
 
-.card {
+.cars-card .card {
     width: 17rem;
 }
 
@@ -522,3 +548,93 @@ input:focus::placeholder {
 .card-text .bx-key {
     transform: rotate(-50deg);
 }
+
+.card .btn-outline-danger {
+    margin-right: 10px;
+}
+
+.card .btn {
+    width: 115px;
+    margin-top: 16px;
+}
+
+.card .modal-body {
+    border-bottom: 0;
+}
+
+.card .modal-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.card .modal-text {
+    padding: 0 50px;
+}
+
+.card .modal-footer {
+    border-top: 0;
+    justify-content: center;
+}
+
+.modal-footer .btn {
+    margin-top: 0;
+    border: 1px solid var(--primary-blue-1);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-blue-1);
+}
+
+.modal-footer .btn:hover, .modal-footer .btn:focus {
+    background-color: var(--primary-blue-1);
+    color: #FFF;
+}
+
+.modal-footer .close {
+    padding: 10px 12px;
+    opacity: 1;
+    text-shadow: none;
+}
+
+
+
+/* =============================================================================================================================================== 
+                                                CARS PAGE : ADD CAR
+================================================================================================================================================== */
+.card .custom-file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.card .form-control, .card .placeholder {
+    color: #8A8A8A;
+}
+
+.add-form .btn-group {
+    padding-left: 0;
+    margin-bottom: 16px;
+    margin-top: 282px;
+}
+
+.add-form .btn {
+    
+    margin-left: 0;
+    border: 1px solid var(--primary-blue-1);
+    background-color: #FFF;
+    color: var(--primary-blue-1);
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.add-form .btn:hover, .add-form .btn:focus {
+    border: 1px solid var(--primary-blue-1);
+    color: #FFF;
+    background-color: var(--primary-blue-1);
+}
+

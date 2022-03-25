@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const userController = require('../controllers/dashboard')
+const userController = require('../controllers/dashboard.js')
 
 router.use( (req,res,next) => {
   req.app.set('layout', 'layouts/dashboard')  

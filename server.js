@@ -14,7 +14,7 @@ app.use( (req, res, next) => {
 })
 
 // Routing (path)
-app.get('/', (req, res ) => { res.render('index') })
+app.get('/', (req, res) => res.render('index'))
 app.use('/dashboard/', routers.dashboard)
 app.use('/cars/', routers.cars)
 
